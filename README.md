@@ -12,7 +12,7 @@ This repository contains the middleware's source code, workshop materials, proje
 - [Project Overview](#overview)
 - [Features](#features)
 - [Repository Structure](#repository-structure)
-- [Installation Guide](#installation-guide)
+<!-- - [Installation Guide](#installation-guide) -->
 - [Demonstration Videos](#demonstration-videos)
 - [Citing Our Research](#citing-our-research)
 - [License](#license)
@@ -32,6 +32,7 @@ This repository contains the middleware's source code, workshop materials, proje
   - **Installation Guide**: A step-by-step video guide demonstrating how to install the middleware on a Raspberry Pi.
 - **`/research-paper`**: Placeholder for the research paper associated with the project.
 
+<!--
 ## Installation Guide
 
 ### Prerequisites
@@ -49,6 +50,8 @@ This repository contains the middleware's source code, workshop materials, proje
     pip install -r requirements.txt
     ```
 3. Follow the setup instructions provided in the [documentation](./docs/installation_guide.md) for configuring your smart devices.
+
+-->
 
 ## Demonstration Videos
 - **[Video 1: CIREI and WISEWARE Middleware Demo](./videos/middleware-demo.mp4)**: Demonstrating how the middleware operates with various devices in a smart home.
