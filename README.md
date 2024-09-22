@@ -25,11 +25,8 @@ This repository contains the middleware's source code, workshop materials, proje
 
 ## Repository Structure
 - **`/src`**: Contains the source code for the CIREI and WISEWARE middleware.
-- **`/workshop`**: Workshop materials from the co-design sessions, including slides and research methodologies.
+- **`/Workshop Materials`**: Workshop materials from the co-design sessions, including slides and research methodologies.
 - **`/docs`**: Detailed project documentation, covering middleware usage, device configuration, and deployment guides.
-- **`/videos`**: 
-  - **Middleware Demonstration**: A video showcasing how the middleware integrates with multiple devices from different manufacturers in a smart home setting.
-  - **Installation Guide**: A step-by-step video guide demonstrating how to install the middleware on a Raspberry Pi.
 - **`/research-paper`**: Placeholder for the research paper associated with the project.
 
 <!--
