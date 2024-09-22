@@ -62,8 +62,6 @@ If you use this middleware or materials from this repository, please cite the fo
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ## Contributors
-- Ala 'uno
 - Abdel-Karim Al-Tamimi
 - Lantana Hewitt
-- [Add other contributors]
 
