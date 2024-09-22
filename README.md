@@ -6,6 +6,13 @@
 
 Welcome to the **CIREI and WISEWARE Middleware** repository. This project introduces a middleware solution designed to enhance the integration of robots with embodied intelligence in the homes of older adults living with frailty. Our solution, developed under the CIREI framework, facilitates interoperability between commercial off-the-shelf (COTS) devices, enabling smarter, more adaptive environments that promote independent living for older individuals.
 
+![Picture1](https://github.com/user-attachments/assets/7e90bdd7-a93c-480a-a8f7-5ec330fcce55)
+![Picture2](https://github.com/user-attachments/assets/33362e7f-4ee4-46e2-8cbd-6e11f11d46c4)
+![Picture3](https://github.com/user-attachments/assets/427bfb6c-0f67-4944-b8ca-7d7534969fac)
+![Picture4](https://github.com/user-attachments/assets/d42d0b78-72d8-4a21-9e1b-7cd967140bb0)
+
+
+
 This repository contains the middleware's source code, workshop materials, project documentation, and demonstration videos that illustrate the installation process and real-life application with a variety of devices.
 
 ## Table of Contents
