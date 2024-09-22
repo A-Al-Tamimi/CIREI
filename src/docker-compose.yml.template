@@ -1,0 +1,107 @@
+#The services featured in stock WISE-WARE:
+# Portainer       : A web UI for managing Docker containers
+# Zookeeper       : A distributed coordination service for managing Kafka
+# Kafka           : A distributed event streaming platform
+# Home Assistant  : An open-source home automation platform
+# Node-RED        : A low-code, visual programming tool for making automations
+
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    restart: unless-stopped
+    ports:
+      - "9000:9000/tcp" #Exposed so users can access the webUI
+    environment:
+      - TZ=Europe/London
+    volumes:
+      #Persistent admin account data
+      - ./containervolumes/portainer:/data
+      #Docker daemon socket, allows Portainer access to other containers
+      - /var/run/docker.sock:/var/run/docker.sock
+  
+  zookeeper:
+    container_name: zookeeper
+    image: confluentinc/cp-zookeeper:latest
+    restart: unless-stopped
+    #user: 1000:1000 #Deprecated, no longer needed (probably)
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      #Allows the Kafka broker to use 'ruok' on this service, which is used for
+      #the health check
+      KAFKA_OPTS: "-Dzookeeper.4lw.commands.whitelist=ruok"
+    ports:
+      #Exposing this port allows other services - even those not in this Docker
+      #network - to synchronise configuration data with it
+      - 22181:2181
+    #This is included so other dependant services - such as Kafka - can confirm
+    #that Zookeeper has finished starting up and is ready for them to start
+    #depending on it.  Without this startup takes much longer and may need
+    #manual correction
+    healthcheck:
+      test: echo ruok | nc 127.0.0.1 2181 || exit -1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:  #Persistent storage so Zookeeper's data survives container destruction/replacement
+     - ./containervolumes/zookeeper/data:/var/lib/zookeeper/data
+     - ./containervolumes/zookeeper/log:/var/lib/zookeeper/log
+
+  #In cases where multiple Kafka brokers are required in a single cluster, they should also have distinct service names; a postfixed number is fine eg. kafka-1, kafka-2, etc.
+  kafka:
+    container_name: kafka
+    image: confluentinc/cp-kafka:latest
+    restart: unless-stopped
+    #user: 1000:1000 #Deprecated, no longer needed (probably)
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+        restart: true #If Zookeeper restarts, Kafka will too
+    ports:
+      - 9092:9092 #Exposed so external services - and those that network as external agents, like Home Assistant - can access the cluster.  This port would also be used by BI solutions consuing events, for example
+    environment:
+      KAFKA_BROKER_ID: 1  #In cases where there is just 1 broker, this is not important, but clusters of many brokers will require that they each have a unique broker ID
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://<<HOST_IP>>:9092 #The ports have distinct IP addresses because 29092 is only accessible from within the Docker network, so would use the local IP of the Kafka service, while external services would need the IP address of the host machine to access the broker.
+      #A good explanation of Kafka's listener system: https://www.confluent.io/en-gb/blog/kafka-listeners-explained/
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT #In cases where multiple brokers coordinate, this indicates which of the listeners above (PLAINTEXT OR PLAINTEXT_HOST) should be used.  Assumes that these brokesr are withing the Docker network
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1 #A higher number will consume storage faster, so increases to this replication factor should be considered against how often data will be cleared out, the maximum storage, etc.
+    healthcheck:  #Implemented a basic health check so other dependent services will wait for Kafka to finish loading up before trying to start themselves
+      test: nc -z 127.0.0.1 29092 || exit -1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    volumes:  #Persistent storage so Kafka's data survives container destruction/replacement
+     - ./containervolumes/kafka/broker/data:/var/lib/kafka/data
+     - ./containervolumes/kafka/secrets:/etc/kafka/secrets
+
+
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    restart: unless-stopped
+    depends_on:
+      kafka:
+        condition: service_healthy  #Reminder; service_healthy requires a healthcheck to be defined for the depended-on service, otherwise service_started is the next best option
+        restart: true #If Kafka restarts, Home Assistant will too
+    volumes:
+      - ./containervolumes/homeassistant/config:/config #Persistent configuration data, includes automation settings, dashboards, user accounts and permissions etc.
+      - /etc/localtime:/etc/localtime:ro  #Time synchronisation with host, readonly
+      - /run/dbus:/run/dbus:ro  #Desktop bus, readonly; a prerequisite for Bluetooth functionality
+    privileged: true  #Home Assistant needs elevated permissions to run
+    network_mode: host  #Uses the host machine's network stack; can be disabled as long as port 8123 is exposed, but this also allows for device discovery
+
+  nodered:
+    container_name: nodered
+    image: nodered/node-red
+    restart: unless-stopped
+    ports:
+      - "1880:1880/tcp" #Exposed so users can access the webUI; also, as Home Assistant has to network as an external service (host network mode), this is needed to allow the Node-RED UI panel to function
+    environment:
+      - TZ=Europe/London
+    volumes:
+      - ./containervolumes/nodered/data:/data #Persistent configuration and flow (user-made automations) data
+    depends_on:
+      - homeassistant

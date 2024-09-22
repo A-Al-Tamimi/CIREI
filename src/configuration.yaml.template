@@ -1,0 +1,23 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+apache_kafka:
+  ip_address: <<HOST_IP>>
+  port: 9092
+  topic: home_assistant
+
+panel_iframe:
+  nodered:
+    title: Node-RED
+    icon: mdi:lan
+    url: http://<<HOST_IP>>:1880/
+    require_admin: true
