@@ -55,6 +55,7 @@ This repository contains the middleware's source code, workshop materials, proje
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nhNKDavh9IU/0.jpg)](https://www.youtube.com/watch?v=nhNKDavh9IU)
 
 ## Demonstration Videos
 - **[Video 1: CIREI and WISEWARE Middleware Demo](https://youtu.be/5cGPZbTY78I)**: Demonstrating how the middleware operates with various devices in a smart home.
