@@ -15,11 +15,11 @@ This repository contains the middleware's source code, workshop materials, proje
 - [Project Overview](#overview)
 - [Features](#features)
 - [Repository Structure](#repository-structure)
-<!-- - [Installation Guide](#installation-guide) -->
 - [Demonstration Videos](#demonstration-videos)
 - [Citing Our Research](#citing-our-research)
 - [License](#license)
 - [Contributors](#contributors)
+<!-- - [Installation Guide](#installation-guide) -->
 
 ## Features
 - **Device Interoperability**: Seamlessly integrates with a range of COTS devices to promote smarter, safer environments.
