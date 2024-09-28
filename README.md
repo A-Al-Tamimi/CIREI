@@ -71,8 +71,8 @@ If you use this middleware or materials from this repository, please cite the fo
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ## Contributors
-- Dr Abdel-Karim Al-Tamimi [![Linkedin](https://i.sstatic.net/gVE0j.png =25x25) LinkedIn](https://www.linkedin.com/in/artamimi)
-- [![GoogleScholar](https://scholar.google.com/favicon.ico =25x25) GoogleScholar](https://scholar.google.com/citations?user=oVygx30AAAAJ) 
+- Dr Abdel-Karim Al-Tamimi [![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://www.linkedin.com/in/artamimi =25x25)
+- [![GoogleScholar](https://scholar.google.com/favicon.ico) GoogleScholar](https://scholar.google.com/citations?user=oVygx30AAAAJ) 
 
 - Lantana Hewitt
 
