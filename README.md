@@ -1,6 +1,4 @@
-# CIREI
-
-# CIREI and WISEWARE Middleware
+# CIREI Project and WISEWARE Middleware
 
 ## Overview
 
@@ -54,6 +52,9 @@ This repository contains the middleware's source code, workshop materials, proje
 3. Follow the setup instructions provided in the [documentation](./docs/installation_guide.md) for configuring your smart devices.
 
 -->
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
+
 
 ## Demonstration Videos
 - **[Video 1: CIREI and WISEWARE Middleware Demo](https://youtu.be/5cGPZbTY78I)**: Demonstrating how the middleware operates with various devices in a smart home.
