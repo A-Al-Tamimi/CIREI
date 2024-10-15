@@ -7,6 +7,8 @@ Welcome to the **CIREI and WISE-WARE Middleware** repository. This project intro
 
 ![MixwithLogo](https://github.com/user-attachments/assets/06e858cc-5e17-483a-9b47-f4550ce042d1)
 
+![DemoVideo2](https://github.com/user-attachments/assets/9fcd1cd6-b5f7-4358-a6d6-9cf2e13fcc89)
+![DemoVideo]()
 
 
 This repository contains the middleware's source code, workshop materials, project documentation, and demonstration videos that illustrate the installation process and real-life application with a variety of devices.
@@ -61,11 +63,13 @@ This repository contains the middleware's source code, workshop materials, proje
 - **[Video 1: CIREI and WISEWARE Middleware Demo](https://youtu.be/5cGPZbTY78I)**: 
 Demonstrating how the middleware (WISE-WARE) operates with various devices in a smart home.
 
-[![CIREI - Demo Video](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
+https://img.youtube.com/vi/5cGPZbTY78I/0.jpg
+[![CIREI - Demo Video](https://github.com/user-attachments/assets/2fc8af9f-7af7-468e-971b-6fddf80dff5c)](https://www.youtube.com/watch?v=5cGPZbTY78I)
 - **[Video 2: Installing the Middleware on Raspberry Pi](https://youtu.be/nhNKDavh9IU)**: 
 A step-by-step guide for installing the middleware (WISE-WARE) on a Raspberry Pi.
 
-[![CIREI - Installation Tutorial](https://img.youtube.com/vi/nhNKDavh9IU/0.jpg)](https://www.youtube.com/watch?v=nhNKDavh9IU?t=0)
+https://img.youtube.com/vi/nhNKDavh9IU/0.jpg
+[![CIREI - Installation Tutorial](https://github.com/user-attachments/assets/9fcd1cd6-b5f7-4358-a6d6-9cf2e13fcc89)](https://www.youtube.com/watch?v=nhNKDavh9IU?t=0)
 
 ## Citing Our Research
 If you use this middleware or materials from this repository, please cite the following research paper once published:
