@@ -60,10 +60,10 @@ This repository contains the middleware's source code, workshop materials, proje
 ## Demonstration Videos
 - **[Video 1: CIREI and WISEWARE Middleware Demo](https://youtu.be/5cGPZbTY78I)**: 
 Demonstrating how the middleware (WISE-WARE) operates with various devices in a smart home.
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
+[![CIREI - Demo Video](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
 - **[Video 2: Installing the Middleware on Raspberry Pi](https://youtu.be/nhNKDavh9IU)**: 
 A step-by-step guide for installing the middleware (WISE-WARE) on a Raspberry Pi.
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nhNKDavh9IU/0.jpg)](https://www.youtube.com/watch?v=nhNKDavh9IU?t=0)
+[![CIREI - Installation Tutorial](https://img.youtube.com/vi/nhNKDavh9IU/0.jpg)](https://www.youtube.com/watch?v=nhNKDavh9IU?t=0)
 
 ## Citing Our Research
 If you use this middleware or materials from this repository, please cite the following research paper once published:
