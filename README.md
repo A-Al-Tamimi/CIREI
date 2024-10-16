@@ -62,9 +62,7 @@ Demonstrating how the middleware (WISE-WARE) operates with various devices in a 
 https://img.youtube.com/vi/5cGPZbTY78I/0.jpg
 [![CIREI - Demo Video](https://github.com/user-attachments/assets/2fc8af9f-7af7-468e-971b-6fddf80dff5c)](https://www.youtube.com/watch?v=5cGPZbTY78I)
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/5cGPZbTY78I" 
-title="CIREI Demo Video" frameborder="0" allow="accelerometer; autoplay; 
-clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![CIREI - Demo Video](https://i.ytimg.com/vi/5cGPZbTY78I/maxresdefault.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
 
 - **[Video 2: Installing the Middleware on Raspberry Pi](https://youtu.be/nhNKDavh9IU)**: 
 A step-by-step guide for installing the middleware (WISE-WARE) on a Raspberry Pi.
