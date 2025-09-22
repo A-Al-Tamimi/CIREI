@@ -54,36 +54,42 @@ This repository contains the middleware's source code, workshop materials, proje
 -->
 
 
-## Demo Videos
-
-### CIREI and WISE-WARE Middleware Demo
-[![CIREI and WISEWARE Middleware Demo](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://youtu.be/5cGPZbTY78I)
-
-This video demonstrates the core functionality of the WISE-WARE middleware, showing how different assistive devices integrate seamlessly to support older adults in their daily activities.
-
-### Installing the Middleware on Raspberry Pi
-[![Installing the Middleware on Raspberry Pi](https://img.youtube.com/vi/nhNKDavh9IU/0.jpg)](https://youtu.be/nhNKDavh9IU)
-
-Step-by-step installation guide showing how to deploy the WISE-WARE middleware on a Raspberry Pi 4, including Docker setup and device configuration.
-
 
 ## Demonstration Videos
 - **[Video 1: CIREI and WISEWARE Middleware Demo](https://youtu.be/5cGPZbTY78I)**: 
-Demonstrating how the middleware (WISE-WARE) operates with various devices in a smart home.
+
+This video demonstrates the core functionality of the WISE-WARE middleware, showing how different assistive devices integrate seamlessly to support older adults in their daily activities.
 
 [![CIREI - Demo Video](https://i.ytimg.com/vi/5cGPZbTY78I/maxresdefault.jpg)](https://www.youtube.com/watch?v=5cGPZbTY78I)
 
 - **[Video 2: Installing the Middleware on Raspberry Pi](https://youtu.be/nhNKDavh9IU)**: 
-A step-by-step guide for installing the middleware (WISE-WARE) on a Raspberry Pi.
+A step-by-step guide for installing the middleware (WISE-WARE) on a Raspberry Pi 4, including Docker setup and device configuration.
 
 [![CIREI - Installation Tutorial](https://i.ytimg.com/vi/nhNKDavh9IU/maxresdefault.jpg)](https://www.youtube.com/watch?v=nhNKDavh9IU?t=0)
 
 ## Citing Our Research
 If you use this middleware or materials from this repository, please cite the following research paper once published:
-- **Placeholder for Citation**: The research paper citation will be available here upon publication.
+
+```bibtex
+@article{Al-Tamimi2025,
+  title={Challenges of Integrating Assistive Technologies and Robots with Embodied Intelligence in the Homes of Older People Living with Frailty},
+  author={Al-Tamimi, Abdel-Karim and Hewitt, Lantana and Cameron, David and Salem, Maher and Moemeni, Armaghan},
+  journal={Applied Sciences},
+  volume={15},
+  number={15},
+  pages={8415},
+  year={2025},
+  publisher={MDPI},
+  doi={10.3390/app15158415}
+}
+```
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Funding
+
+This work was partially supported by the UK Engineering and Physical Sciences Research Council (EPSRC) under the EMERGENCE (Project EP/W000741/1) Network+ Grant.
 
 ## Contributors
 - Dr Abdel-Karim Al-Tamimi <span><a href="https://www.linkedin.com/in/artamimi">
