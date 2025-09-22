@@ -20,7 +20,6 @@ The rapid increase in the global population of older adults presents a significa
 
 - **Abdel-Karim Al-Tamimi** (Corresponding Author)
   - School of Computing and Digital Technologies, Sheffield Hallam University, Sheffield, UK
-  - Computer Engineering Department, Yarmouk University, Irbid, Jordan
   - Email: a.al-tamimi@shu.ac.uk
 
 - **Lantana Hewitt**
