@@ -22,9 +22,16 @@ This repository contains the middleware's source code, workshop materials, proje
 <!-- - [Installation Guide](#installation-guide) -->
 
 ## Features
+- **Comprehensive Model**: Captures nuanced needs, preferences, and challenges of older adults
+- **User-Centred Design**: Based on extensive co-design workshops with 30 participants
+- **Theoretical Foundation**: Grounded in a systematic literature review of technology acceptance models
 - **Device Interoperability**: Seamlessly integrates with a range of COTS devices to promote smarter, safer environments.
 - **Embodied Intelligence**: Leverages robotic intelligence to address the unique needs of older adults living with frailty.
 - **Raspberry Pi Support**: Easily install and run the middleware on a Raspberry Pi.
+- **FIWARE Architecture**: Built on open-source FIWARE v.8.6 for standardised interoperability
+- **Privacy-Focused**: Local data storage with encryption and user consent controls
+- **Multi-Modal Intelligence**: Aggregates data for preventive care and interventions
+- **Raspberry Pi Deployment**: Lightweight implementation using Docker containers
 
 ## Repository Structure
 - **`/src`**: Contains the source code for the CIREI and WISE-WARE middleware.
