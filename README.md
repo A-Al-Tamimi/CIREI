@@ -1,8 +1,10 @@
 # CIREI Project and WISE-WARE Middleware
 
-## Overview
+## Project Overview
 
 Welcome to the **CIREI and WISE-WARE Middleware** repository. This project introduces a middleware solution designed to enhance the integration of robots with embodied intelligence in the homes of older adults living with frailty. Our solution, developed under the CIREI framework, facilitates interoperability between commercial off-the-shelf (COTS) devices, enabling smarter, more adaptive environments that promote independent living for older individuals.
+
+The research combines a systematic literature review with co-design activities involving older adults, caregivers, and technology experts to understand the barriers and facilitators to assistive technology adoption. The result is WISE-WARE, an intelligent middleware prototype that seamlessly integrates diverse assistive technologies to support health management and improve quality of life.
 
 
 ![MixwithLogo](https://github.com/user-attachments/assets/06e858cc-5e17-483a-9b47-f4550ce042d1)
@@ -52,7 +54,17 @@ This repository contains the middleware's source code, workshop materials, proje
 -->
 
 
+## Demo Videos
 
+### CIREI and WISE-WARE Middleware Demo
+[![CIREI and WISEWARE Middleware Demo](https://img.youtube.com/vi/5cGPZbTY78I/0.jpg)](https://youtu.be/5cGPZbTY78I)
+
+This video demonstrates the core functionality of the WISE-WARE middleware, showing how different assistive devices integrate seamlessly to support older adults in their daily activities.
+
+### Installing the Middleware on Raspberry Pi
+[![Installing the Middleware on Raspberry Pi](https://img.youtube.com/vi/nhNKDavh9IU/0.jpg)](https://youtu.be/nhNKDavh9IU)
+
+Step-by-step installation guide showing how to deploy the WISE-WARE middleware on a Raspberry Pi 4, including Docker setup and device configuration.
 
 
 ## Demonstration Videos
