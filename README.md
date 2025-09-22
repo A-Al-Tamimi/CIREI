@@ -37,7 +37,7 @@ This repository contains the middleware's source code, workshop materials, proje
 - **`/src`**: Contains the source code for the CIREI and WISE-WARE middleware.
 - **`/Workshop Materials`**: Workshop materials from the co-design sessions, including slides and research methodologies.
 - **`/docs`**: Detailed project documentation, covering middleware usage, device configuration, and deployment guides.
-- **`/research-paper`**: Placeholder for the research paper associated with the project.
+- **`/research-paper`**: Our research paper associated with the project.
 
 <!--
 ## Installation Guide
